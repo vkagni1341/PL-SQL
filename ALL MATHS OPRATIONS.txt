@@ -1,0 +1,26 @@
+ALL MATHS OPRATIONS :-
+------------------------
+SQL> DECLARE
+  2    A INT;
+  3    B INT;
+  4  BEGIN
+  5    A := 10;
+  6    B := 20;
+  7    DBMS_OUTPUT.PUT_LINE('-----------------------------');
+  8    DBMS_OUTPUT.PUT_LINE(A + B);
+  9    DBMS_OUTPUT.PUT_LINE(A - B);
+ 10    DBMS_OUTPUT.PUT_LINE(A * B);
+ 11    DBMS_OUTPUT.PUT_LINE(A / B);
+ 12    DBMS_OUTPUT.PUT_LINE(MOD(A, B));
+ 13    DBMS_OUTPUT.PUT_LINE('-----------------------------');
+ 14  END;
+ 15  /
+-----------------------------
+30
+-10
+200
+.5
+10
+-----------------------------
+
+PL/SQL procedure successfully completed.
