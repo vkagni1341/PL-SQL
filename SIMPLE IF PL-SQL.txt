@@ -1,0 +1,30 @@
+SIMPLE IF CONDITIONAL STATEMENT :-
+==================================
+
+ 
+DECLARE
+  A INT;
+  B INT;
+BEGIN
+  A := 10;
+  B := 5;
+  
+  IF (MOD(A, B) = 0) THEN
+    DBMS_OUTPUT.PUT_LINE('DIVISIBLE');
+  END IF;
+END;
+/
+----------------------------------------------------------------------------------------------------
+
+DECLARE
+  A INT;
+  B INT;
+BEGIN
+  A := 10;
+  B := 5;
+  
+  IF (A < B) THEN
+    DBMS_OUTPUT.PUT_LINE(A * B);
+  END IF;
+END;
+/
