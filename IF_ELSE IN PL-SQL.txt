@@ -1,0 +1,46 @@
+IF ELSE CONDITIONS :-
+====================
+
+
+SQL> DECLARE
+  2  A INT ;
+  3  B INT ;
+  4  BEGIN
+  5  A := 10;
+  6  B := 5 ;
+  7  IF(A>B)THEN
+  8  DBMS_OUTPUT.PUT_LINE(A*B);
+  9  ELSE
+ 10  DBMS_OUTPUT.PUT_LINE(A+B);
+ 11  END IF;
+ 12  END;
+ 13  /
+
+OUTPUT
+-------
+50
+
+PL/SQL procedure successfully completed.
+
+---------------------------------------------------------------------------------------------------
+
+
+SQL> DECLARE
+  2  A INT ;
+  3  B INT ;
+  4  BEGIN
+  5  A := 10;
+  6  B := 5 ;
+  7  IF(MOD(A,B)=0)THEN
+  8  DBMS_OUTPUT.PUT_LINE('DIVISIBLE');
+  9  ELSE
+ 10  DBMS_OUTPUT.PUT_LINE('NOT DIVISIBLE');
+ 11  END IF;
+ 12  END;
+ 13  /
+
+OUTPUT :-
+---------
+DIVISIBLE
+
+PL/SQL procedure successfully completed.
